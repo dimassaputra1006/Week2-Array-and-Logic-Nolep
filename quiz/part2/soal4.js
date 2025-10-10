@@ -1,21 +1,22 @@
-function jadiNumber(pasangan) {
-  for (let j = 0; j < pasangan.length; ++j) {
-    Number(pasangan)
-  }
-  return Math.max(...pasangan)
-}
+// function jadiNumber(pasangan) {
+//   // for (let j = 0; j < pasangan.length; ++j) {
+//   //   Number(pasangan)
+//   // }
+//   return Math.max(...pasangan)
+// }
 
 function pasanganTerbesar(num) {
   let angka = num.toString()
   let pasangan = ''
   let result = []
   let j = 1
-  for (let i = 0; i < 5; ++i){
+  for (let i = 0; i < angka.length -1 ; ++i){
     pasangan = angka[i] + angka[j]
     result.push(pasangan)
     ++j
   }
-  return jadiNumber(result)
+  // console.log(result)
+  return Math.max(...result)
 }
 
 // TEST CASES

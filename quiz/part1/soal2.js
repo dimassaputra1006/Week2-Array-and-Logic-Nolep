@@ -7,8 +7,9 @@ function dataHandling2(input) {
   input.splice(5, 1, "SMA Internasional Metro");
 
   console.log(input);
+  // let tanggal = input[3].split('/')
   let hariBulanTahun = input[3].toString();
-  let bulan = Math.abs(hariBulanTahun.slice(3, 5));
+  let bulan = Math.abs(hariBulanTahun.slice(3, 5)); //
   let namaBulan = "";
   switch (bulan) {
     case 1:

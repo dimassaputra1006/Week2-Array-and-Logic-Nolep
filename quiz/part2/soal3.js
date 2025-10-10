@@ -2,7 +2,7 @@ function hitungJumlahKata(kalimat) {
     // let hitungKata = kalimat.split("")
     let jumlahSeparator = 0
     for (let i = kalimat.length;i>=0 ;--i) {
-        if (' '.includes(kalimat[i]))
+        if (kalimat[i] === ' ')
         ++jumlahSeparator
     }
     let jumlahKata = jumlahSeparator + 1

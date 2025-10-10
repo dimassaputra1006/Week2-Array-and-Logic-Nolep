@@ -3,7 +3,7 @@ diberikan sebuah function groupAnimals(animals) yang menerima satu parameter ber
 fungsi ini akan me-return array 2 dimensi
 */
 function groupAnimals(animals) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
   let abjad = ''
   let animal = ''
   let HPAnimal =''
